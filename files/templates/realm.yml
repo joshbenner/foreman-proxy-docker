@@ -1,0 +1,6 @@
+---
+:enabled: {{ .Env.REALM_ENABLED }}
+:realm_provider: freeipa
+:realm_keytab: {{ .Env.IPA_KEYTAB_PATH }}
+:realm_principal: {{ .Env.IPA_PRINCIPAL }}
+:freeipa_remove_dns: {{ .Env.IPA_REMOVE_DNS }}

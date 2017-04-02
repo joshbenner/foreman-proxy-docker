@@ -1,0 +1,4 @@
+---
+:enabled: {{ .Env.DHCP_ENABLED }}
+:use_provider: {{ .Env.DHCP_PROVIDER }}
+:server: {{ .Env.DHCP_SERVER }}

@@ -1,0 +1,4 @@
+---
+:enabled: {{ .Env.DNS_ENABLED }}
+:use_provider: {{ .Env.DNS_PROVIDER }}
+:dns_ttl: {{ .Env.DNS_TTL }}

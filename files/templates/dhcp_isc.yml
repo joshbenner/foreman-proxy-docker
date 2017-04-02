@@ -1,0 +1,3 @@
+---
+:config: {{ .Env.ISC_DHCP_CONFIG_PATH }}
+:leases: {{ .Env.ISC_DHCP_LEASES_PATH }}

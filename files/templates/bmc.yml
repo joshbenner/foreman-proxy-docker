@@ -1,0 +1,3 @@
+---
+:enabled: {{ .Env.BMC_ENABLED }}
+:bmc_default_provider: {{ .Env.BMC_DEFAULT_PROVIDER }}

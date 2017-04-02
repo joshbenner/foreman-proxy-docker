@@ -1,0 +1,4 @@
+---
+:enabled: {{ .Env.TFTP_ENABLED }}
+:tftproot: {{ .Env.TFTP_ROOT }}
+:tftp_servername: {{ .Env.TFTP_SERVERNAME }}

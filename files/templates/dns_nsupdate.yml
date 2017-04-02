@@ -1,0 +1,3 @@
+---
+:dns_key: {{ .Env.NSUPDATE_KEY_PATH }}
+:dns_server: {{ .Env.NSUPDATE_SERVER }}
