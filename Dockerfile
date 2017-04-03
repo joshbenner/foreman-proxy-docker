@@ -4,6 +4,7 @@ FROM ubuntu:16.04
 ENV FOREMAN_RELEASE=1.14 \
     FOREMAN_PACKAGE_VERSION=1.14.2-1 \
     DOCKERIZE_VERSION=v0.3.0 \
+    SSL=false \
     FOREMAN_URL=foreman \
     TRUSTED_HOSTS=localhost,host1,host2 \
     BMC_ENABLED=true \

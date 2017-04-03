@@ -13,3 +13,9 @@
 :http_port: 8000
 :log_file: STDOUT
 :log_level: INFO
+{{ if isTrue .Env.SSL }}
+:https_port: 8443
+:ssl_certificate: /cert.pem
+:ssl_private_key: /key.pem
+:ssl_ca_file: /ca.pem
+{{ end }}
