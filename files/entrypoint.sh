@@ -1,5 +1,8 @@
 #!/bin/sh
 
+# Trust CA certs mounted to /usr/local/share/ca-certificates/*
+update-ca-certificates
+
 dockerize \
   -template /templates/settings.yml:/etc/foreman-proxy/settings.yml \
   -template /templates/bmc.yml:/etc/foreman-proxy/settings.d/bmc.yml \
