@@ -46,7 +46,8 @@ RUN wget -q https://deb.theforeman.org/pubkey.gpg -O- | apt-key add - && \
     echo "deb http://deb.theforeman.org/ plugins $FOREMAN_RELEASE" >> /etc/apt/sources.list.d/foreman.list && \
     apt-get update && \
     DEBIAN_FRONTEND=noninteractive apt-get install -y -q \
-      foreman-proxy=$FOREMAN_PACKAGE_VERSION dnsutils freeipmi ipmitool && \
+      foreman-proxy=$FOREMAN_PACKAGE_VERSION \
+      dnsutils freeipmi ipmitool isc-dhcp-server && \
     apt-get clean && rm -rf /var/lib/apt/lists/*
 
 COPY files/ /
